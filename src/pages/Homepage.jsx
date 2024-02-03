@@ -59,7 +59,7 @@ function Homepage() {
         <div className={styles.staticsHeader}>
           <h2>Advanced Statistics</h2>
           <p>
-            Track how your links are performing across the web with{" "}
+            Track how your links are performing across the web with
             <span>our advanced statistics dashboard.</span>
           </p>
         </div>
