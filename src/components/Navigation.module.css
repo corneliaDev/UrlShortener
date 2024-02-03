@@ -1,0 +1,158 @@
+.nav {
+  width: var(--width-container);
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: var(--margin-b);
+}
+
+.navDesktop {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navDesktop ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navDesktop a:link,
+.navDesktop a:visited {
+  transition: color 0.3s;
+  text-decoration: none;
+  color: var(--color-gray--2);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navDesktop a:hover,
+.navDesktop a:active {
+  color: var(--color-light--2);
+}
+
+.loginArea {
+  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobile {
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+
+/* MOBILE Navigation */
+
+@media screen and (max-width: 37.5rem) {
+  .nav {
+    position: relative;
+    justify-content: space-between;
+    width: var(--width-container--mobile);
+  }
+
+  .mobile {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .mobileNavMenu {
+    border: none;
+    border-radius: 0;
+    background-color: var(--color-dark--2);
+    height: 2px;
+    width: 4.5rem;
+    display: block;
+    visibility: visible;
+  }
+
+  .mobileNavMenu::before {
+    transform: translateY(-1.2rem);
+  }
+  .mobileNavMenu::after {
+    transform: translateY(1.2rem);
+  }
+
+  .mobileNavMenu::before,
+  .mobileNavMenu::after {
+    background-color: var(--color-dark--2);
+    height: 2px;
+    width: 4.5rem;
+    content: " ";
+    display: block;
+  }
+
+  .mobileNavClose {
+    font-size: 3rem;
+    font-weight: 700;
+    border: none;
+    background-color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .navDesktop {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    padding: 5rem 3rem;
+    background-color: var(--color-primary--2);
+    width: var(--width-container--mobile);
+    border-radius: var(--border-radius);
+    transform: translateX(100%);
+    transition: all 0.8s ease-in;
+    display: block;
+    z-index: 999;
+  }
+
+  .open {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .open.navDesktop {
+    transform: translateX(0);
+  }
+
+  .open .noLogo {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+  }
+
+  .navDesktop a:link,
+  .navDesktop a:visited {
+    color: var(--color-white);
+  }
+
+  .navDesktop ul {
+    flex-direction: column;
+    gap: 3.8rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    border-bottom: 0.8px solid var(--color-gray--1);
+    font-size: inherit;
+    color: var(--color-white);
+  }
+
+  .loginArea {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    flex-direction: column;
+    gap: 3.8rem;
+    align-items: normal;
+  }
+
+  .login {
+    align-self: center;
+  }
+}

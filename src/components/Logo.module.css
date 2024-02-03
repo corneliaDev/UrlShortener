@@ -1,0 +1,12 @@
+.logoHeader {
+  height: 3.2rem;
+}
+
+.logoFooter {
+  height: 2.8rem;
+  filter: invert(100%);
+}
+
+.logoLink {
+  display: block;
+}

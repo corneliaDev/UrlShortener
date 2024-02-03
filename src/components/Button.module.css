@@ -1,0 +1,59 @@
+.btn {
+  padding: 1rem 3rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-primary--1);
+  color: var(--color-white);
+  transition: opacity 0.3s;
+}
+
+.primary {
+  border-radius: var(--border-radius-rounder);
+}
+
+.api {
+  padding: 1.2rem 2rem;
+  width: 18rem;
+}
+
+.api,
+.copy,
+.copied {
+  border-radius: var(--border-radius);
+}
+
+.delete {
+  padding: 0.4rem 0.4rem;
+  color: var(--color-primary--2);
+  background-color: var(--color-white);
+}
+
+.delete:hover {
+  transition: all 0.3s;
+  transform: scale(1.15);
+}
+
+.copy:hover,
+.copied {
+  background-color: var(--color-primary--2);
+}
+
+.primary:hover,
+.api:hover {
+  background-color: hsl(180, 62%, 70%);
+}
+
+@media screen and (max-width: 37.5rem) {
+  .api {
+    width: initial;
+  }
+
+  .delete {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+  }
+}

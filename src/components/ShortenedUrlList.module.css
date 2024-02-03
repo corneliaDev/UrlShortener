@@ -1,0 +1,16 @@
+.urlList {
+  padding-top: 4rem;
+  width: var(--width-container);
+
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .urlList {
+    padding-top: 10rem;
+    width: var(--width-container--mobile);
+  }
+}

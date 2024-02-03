@@ -1,0 +1,89 @@
+:root {
+  --color-primary--1: hsl(180, 66%, 49%);
+  --color-primary--2: hsl(257, 27%, 26%);
+  --color-secondary: hsl(0, 87%, 67%);
+  --color-white: #fff;
+  --color-gray--1: hsl(0, 0%, 85%);
+  --color-gray--2: hsl(257, 7%, 63%);
+  --color-dark--1: hsl(255, 11%, 22%);
+  --color-dark--2: hsl(260, 8%, 14%);
+  --width-container: 80vw;
+  --width-container--mobile: 87vw;
+  --margin-b: 8rem;
+  --margin-s: 4rem;
+  --border-radius: 7px;
+  --border-radius-rounder: 25px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* DESKTOP Design */
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.root {
+  max-width: 144.4rem;
+}
+
+@media screen and (max-width: 144.4rem) {
+  .page {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 6rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: var(--color-dark--2);
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    color: var(--color-dark--2);
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    color: var(--color-dark--2);
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+    color: var(--color-gray--2);
+  }
+}
