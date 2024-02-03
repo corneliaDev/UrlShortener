@@ -1,5 +1,5 @@
 import ShortenedUrlItem from "./ShortenedUrlItem";
-import styles from "./shortenedUrlList.module.css";
+import styles from "./ShortenedUrlList.module.css";
 
 function shortenedUrlList({ urlBundles, onDeleteUrlBundle }) {
   return (
