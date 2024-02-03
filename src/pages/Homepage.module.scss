@@ -42,7 +42,7 @@
   .urlResults {
     background-color: var(--color-gray--1);
     width: 100vw;
-    padding-top: 3rem;
+    padding-top: 4rem;
 
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
     flex-direction: column;
     justify-content: flex-start;
     background-color: var(--color-white);
-    padding: 2rem;
+    padding: 3rem;
     padding-top: 6rem;
     border-radius: var(--border-radius);
     position: relative;
@@ -137,7 +137,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem 0;
+    padding: 6rem 0;
 
     h2 {
       color: var(--color-white);

@@ -2,7 +2,7 @@
   width: var(--width-container);
   background-color: var(--color-primary--2);
   background-image: url(bg-shorten-desktop.svg);
-  padding: 4rem 4rem;
+  padding: 5rem 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
