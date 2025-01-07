@@ -23,28 +23,29 @@ function Homepage() {
 
   return (
     <div className="page">
-      <Navigation />
-
-      <div className={styles.container}>
-        <header className={styles.header}>
-          <div className={styles.content}>
-            <h1>
-              More than just <span>shorter links</span>
-            </h1>
-            <p>
-              Build your brand’s recognition and get detailed{" "}
-              <span>insights on how your links are performing.</span>
-            </p>
-            <Button type="primary">Get Started</Button>
-          </div>
-          <div className={styles.image}>
-            <img
-              src="/illustration-working.svg"
-              alt="url shortening App logo"
-              className={styles.logo}
-            />
-          </div>
-        </header>
+      <div className={styles.hero}>
+        <div className={styles.container}>
+          <Navigation />
+          <header className={styles.header}>
+            <div className={styles.content}>
+              <h1>
+                More than just <span>shorter links</span>
+              </h1>
+              <p>
+                Build your brand’s recognition and get detailed{" "}
+                <span>insights on how your links are performing.</span>
+              </p>
+              <Button type="primary">Get Started</Button>
+            </div>
+            <div className={styles.image}>
+              <img
+                src="/illustration-working.svg"
+                alt="url shortening App logo"
+                className={styles.logo}
+              />
+            </div>
+          </header>
+        </div>
       </div>
       <section className={`${styles.container} ${styles.urlInput}`}>
         <UrlShortener onUrlBundles={handleUrlBundles} />

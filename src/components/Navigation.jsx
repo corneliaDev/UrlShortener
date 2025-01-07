@@ -3,7 +3,7 @@ import Button from "./Button";
 import Logo from "./Logo";
 
 import styles from "./Navigation.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Navigation() {
   const [navOpen, setNavOpen] = useState(false);

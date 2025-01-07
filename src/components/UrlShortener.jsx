@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import Button from "./Button";
 
 import styles from "./UrlShortener.module.css";
+import toast from "react-hot-toast";
 
 UrlShortener.propTypes = {
   onUrlBundles: PropTypes.func,
@@ -24,6 +25,8 @@ function UrlShortener({ onUrlBundles }) {
         })
       );
 
+      if (!response.ok) throw new Error("This does not work. We are sorry! ");
+
       const data = await response.data;
       const shortUrl = data.result_url;
 
@@ -35,6 +38,9 @@ function UrlShortener({ onUrlBundles }) {
 
       return shortUrl;
     } catch (err) {
+      toast.error(
+        `This does not work. Blocked by CORS policy: No 'Access-Control-Allow-Origin' ${err.message}. Installation of a CORS extension is not recommended.`
+      );
       console.log(err.message);
     }
   }
